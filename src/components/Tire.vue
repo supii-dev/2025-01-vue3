@@ -1,0 +1,18 @@
+<script setup>
+//pops 외부에서 들어오는 데이터
+const props = defineProps({
+    type: String
+     //{} 는 타입지정
+});
+</script>
+
+<template>
+    <!-- 
+     :style 이것은 vue 문법
+     중괄호 2개 겹쳐져 있는 것은 콧수염 (Mustache 템플릿)
+      -->
+<div :style="{color: props.color}">{{ props.color || 'BLACK' }}>BLACK TIRE</div>
+</template>
+
+<style>
+</style>
