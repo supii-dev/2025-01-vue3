@@ -1,12 +1,20 @@
-<script setup></script>
+<script setup>
+import Tire from './Tire.vue';
+import { useCounterStore } from '@/stores/counter';
+const counterStore = useCounterStore();
+
+</script>
 
 <template>
-    <div class="rear-wheel">
-        <span>REAR WHEEL</span>
-    </div>
+  <div class="rear-wheel">
+    <span>REAR WHEEL</span>
+    <Tire color="RED" />
+    <div>TIMES: {{ counterStore.count }}</div>
+  </div>
 </template>
-<style>
-.rear-wheel{
+
+<style scoped>
+.rear-wheel {
     border: 1px solid black;
     border-radius: 50%;
     display: flex;
@@ -17,4 +25,3 @@
     height: 150px;
 }
 </style>
-
