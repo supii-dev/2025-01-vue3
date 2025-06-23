@@ -1,23 +1,22 @@
 <script setup>
 import FrontWheel from '@/components/FrontWheel.vue';  
-import RearWheel from '@/components/RearWheel.vue';  
+import RearWheel from '@/components/RearWheel.vue';
 </script>
 
 <template>
-  <h1>Hello Vue!</h1>
-  <h1>Hello Vue!</h1> 
-  <FrontWheel></FrontWheel>
-  <RearWheel></RearWheel>
-
-  
-  <div class="car">
-    <FrontWheel/>
-    <RearWheel/>
-  </div>
+    <h1>Hello Vue!</h1>
+    <h1>Hello Vue!</h1>    
+    <FrontWheel></FrontWheel>
+    <RearWheel></RearWheel>
+    
+    <div class="car">
+      <FrontWheel />
+      <RearWheel />
+    </div>
 </template>
 
 <style scoped>
-.car {
+.car { 
   display: flex;
   gap: 10px;
 }
